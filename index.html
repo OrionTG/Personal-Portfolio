@@ -1,47 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="/assets/css/styles.css">
-
-    <!-- FAVICON -->
-    <link rel="shortcut icon" href="assets/img/" type="image/x-icon">
-
-    <!-- REMIXICONS -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-
-    <!-- SWIPER CSS -->
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css" />
 </head>
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+
 <body>
-    <!-- HEADER -->
-    <header class="header" id="header">
 
-    </header>
+    <nav class="topnav" id="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
 
-    <!-- MAIN -->
-    <main class="main">
+    
 
-    </main>
 
-    <!--FOOTER-->
-    <footer class="footer">
-
-    </footer>
-
-    <!-- SCROLLREVEAL -->
-    <script src="#"></script>
-
-    <!-- SWIPER JS -->
-    <script src=""></script>
-
-    <!-- EMAIL JS -->
-
-    <!-- MAIN JS -->
-    <script src="assets/js/main.js"></script>
 </body>
+
 </html>
