@@ -2,34 +2,39 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css" />
+    <title>My Portfolio</title>
 </head>
-<script>
-    function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav";
-        }
-    }
-</script>
 
 <body>
-
-    <nav class="topnav" id="navbar">
-        <a href="#home" class="active">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
+    <!--Top navbar-->
+    <nav>
+        <ul>
+            <li>About</li>
+            <li>Work</li>
+            <li>Contact</li>
+        </ul>
     </nav>
+    <!--END NavBar-->
 
-    
+    <section id="welcome-section">
+        <h1>Hi, I'm Giang</h1>
+        <p>a Front-End Developer</p>
+        <button>Hire Me</button>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <div class="card">
+            <div class="card-content">
+                <h2 class="card-title">My project 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum voluptates dolores, commodi ea
+                    tempora vitae vel neque voluptate velit perspiciatis.</p>
+                <a href="#" class="button">Learn more</a>
+            </div>
+        </div>
+    </section>
 
 
 </body>
