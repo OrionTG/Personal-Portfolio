@@ -3,59 +3,54 @@
 *::after {
     box-sizing: border-box;
 }
+  
+  body {
+    font-family:  Helvetica, Arial, sans-serif;
+  }
+  
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 1000px) {
+    .column {
+      width: 50%;
+      display: block;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    min-height: 250px;
+  }
 
-section {
-    display: grid;
-    min-height: 50vh;
-    place-items: center;
-    line-height: 1.6;
-    background-color: white;
-    font-family: Helvetica, Arial, sans-serif;
-}
-
-.card {
-    color: white;
-    background-color: gray;
-    background-size: cover;
-    padding: 10rem 0 0;
-    max-width: 35ch;
-    border-radius: 1rem;
-    overflow: hidden;
-}
-
-.card-content {
-    --padding: 1.5rem;
-    padding: var(--padding);
-    background: linear-gradient(hsl(0 0% 0% / 0),
-            hsl(20 0% 0% / 0.3) 20%,
-            hsl(0 0% 0% / 1));
-}
-
-.card-title {
-    position: relative;
-    width: max-content;
-}
-
-.card-title::after {
-    content: " ";
-    position: absolute;
-    height: 4px;
-    width: calc(100% + var(--padding));
-    background: greenyellow;
-    left: calc(var(--padding) * -1);
-    bottom: 0;
-}
-
-.button {
-    cursor: pointer;
-    display: inline-block;
+  button{
+    border-radius: 0.25rem;
+    padding:5px 10px;
     text-decoration: none;
-    color: black;
-    background-color: greenyellow;
-    padding: 0.5em 1.25em;
-}
+  }
 
-.button:hover,
-.button:focus {
-    background-color: white;
-}
+  div > p {
+    height: 10ch;
+  }
